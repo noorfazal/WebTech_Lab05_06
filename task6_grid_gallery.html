@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Photo Gallery - CS Student</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #222223 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 30px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: 0.3s;
+            border: 3px solid white;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📸 CS Student Gallery </h1>
+
+    <div class="gallery">
+        <!-- 1. Coding -->
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=300&h=300&fit=crop" alt="Coding">
+        
+        <!-- 2. Laptop Setup -->
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=300&h=300&fit=crop" alt="Laptop">
+        
+        <!-- 3. AI/Machine Learning -->
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=300&h=300&fit=crop" alt="AI">
+        
+        <!-- 4. Cybersecurity -->
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=300&h=300&fit=crop" alt="Cyber">
+        
+        <!-- 5. Data Science -->
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=300&fit=crop" alt="Data">
+        
+        <!-- 6. Computer Science -->
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=300&h=300&fit=crop" alt="CS">
+        
+        <!-- 7. Programming -->
+        <img src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b?w=300&h=300&fit=crop" alt="Programming">
+        
+        <!-- 8. Developer Setup -->
+        <img src="https://images.unsplash.com/photo-1585079542156-2755d9c8a094?w=300&h=300&fit=crop" alt="Developer">
+    </div>
+
+</body>
+</html>

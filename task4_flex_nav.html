@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flexbox Navigation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="flex-nav">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Navigation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Simple Flexbox Navigation */
+        .flex-nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            max-width: 600px;
+            margin: 50px auto;
+        }
+
+        .flex-nav a {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+
+        .flex-nav a:hover {
+            background: #4f46e5;
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .flex-nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                border-radius: 20px;
+            }
+            
+            .flex-nav a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Optional: Show different variations -->
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 50px;">
+        
+        <!-- Left aligned -->
+        <nav style="display: flex; gap: 15px; background: white; padding: 10px 20px; border-radius: 30px;">
+            <a href="#" style="color:#3b373b; text-decoration:none;">Services</a>
+        </nav>
+
+        <!-- Right aligned with gap -->
+        <nav style="display: flex; gap: 15px; background: white; padding: 10px 20px; border-radius: 30px;">
+            <a href="#" style="color:#3b373b; text-decoration:none;">Contact</a>
+        </nav>
+
+        <!-- Space between -->
+        <nav style="display: flex; gap: 15px; background: white; padding: 10px 20px; border-radius: 30px;">
+            <a href="#" style="color:#3b373b; text-decoration:none;">Logo</a>
+        </nav>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Flexbox properties demo -->
+    <div style="max-width: 600px; margin: 40px auto; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px;">
+        <h3 style="color:white; margin-bottom:15px;">Flexbox Properties:</h3>
+        <div style="display: flex; flex-wrap: wrap; gap:10px; color:white; font-size:14px;">
+            <span style="background:#483c9f; padding:5px 10px; border-radius:15px;">display: flex</span>
+            <span style="background:#3b3b8b; padding:5px 10px; border-radius:15px;">justify-content</span>
+            <span style="background:#323294; padding:5px 10px; border-radius:15px;">align-items</span>
+            <span style="background:#272771; padding:5px 10px; border-radius:15px;">flex-direction</span>
+            <span style="background:#3d3d83; padding:5px 10px; border-radius:15px;">gap</span>
+            <span style="background:#3c3885; padding:5px 10px; border-radius:15px;">flex-wrap</span>
+        </div>
+    </div>
+
+</body>
+</html>
+</body>
+</html>

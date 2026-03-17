@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 05: CSS Layout Techniques</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #3498db;
+        }
+        
+        h2 {
+            color: #34495e;
+            margin: 1.5rem 0 1rem;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 0.5rem;
+        }
+        
+        .card ul {
+            list-style: none;
+        }
+        
+        .card li {
+            margin: 0.5rem 0;
+        }
+        
+        .card a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .card a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            margin: 0.25rem 0;
+        }
+        
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📐 Lab 05: CSS Layout Techniques</h1>
+        <p>By the end of this lab, students will be able to understand and apply CSS display properties, implement float-based layouts, master CSS positioning, create responsive layouts using Flexbox and CSS Grid, and much more.</p>
+        <h2>📚 Part A: Display Property Fundamentals</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Exercise 1: Display Property Values</h3>
+                <ul>
+                    <li>🔹 <a href="part-a-display-property/exercise-1-display-values.html">Block, Inline, Inline-block</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Exercise 2: Display in Navigation</h3>
+                <ul>
+                    <li>🔹 <a href="part-a-display-property/exercise-2-display-navigation.html">Navigation Menus</a></li>
+                </ul>
+            </div>
+            </ul>
+
+        </div>
+        </div>
+
+                <h2>🌊 Part B: Float-Based Layouts</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Exercise 3: Basic Float</h3>
+                <ul>
+                    <li>🔹 <a href="part-b-float-layouts/exercise-3-basic-float.html">Image Wrapping & Columns</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Exercise 4: Float Challenges</h3>
+                <ul>
+                    <li>🔹 <a href="part-b-float-layouts/exercise-4-float-challenges.html">Clearfix & Equal Heights</a></li>
+                </ul>
+            </div>
+        
+        </div>
+
+        <h2>📍 Part C: CSS Positioning</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Exercise 5: Position Values</h3>
+                <ul>
+                    <li>🔹 <a href="part-c-positioning/exercise-5-position-values.html">Static to Sticky</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Exercise 6: Practical Positioning</h3>
+                <ul>
+                    <li>🔹 <a href="part-c-positioning/exercise-6-practical-positioning.html">Modals & Tooltips</a></li>
+                </ul>
+            </div>
+        </div>
+            <h2>🔄 Part D: Flexbox Layout System</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Exercises 7-9: Flexbox</h3>
+                <ul>
+                    <li>🔹 <a href="part-d-flexbox/exercise-7-flex-container.html">Flex Container</a></li>
+                    <li>🔹 <a href="part-d-flexbox/exercise-8-flex-items.html">Flex Items</a></li>
+                    <li>🔹 <a href="part-d-flexbox/exercise-9-flex-layouts.html">Practical Layouts</a></li>
+                </ul>
+            </div>
+        </div>
+            <h2>📊 Part E: CSS Grid Layout System</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Exercises 10-12: CSS Grid</h3>
+                <ul>
+                    <li>🔹 <a href="part-e-css-grid/exercise-10-grid-container.html">Grid Container</a></li>
+                    <li>🔹 <a href="part-e-css-grid/exercise-11-grid-items.html">Grid Items</a></li>
+                    <li>🔹 <a href="part-e-css-grid/exercise-12-advanced-grid.html">Advanced Grid</a></li>
+                </ul>
+            </div>
+                 </div>
+
+        <h2>📱 Part F: Media Queries & Responsive Design</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Exercises 13-15: Media Queries</h3>
+                <ul>
+                    <li>🔹 <a href="part-f-media-queries/exercise-13-media-query-fundamentals.html">Query Fundamentals</a></li>
+                    <li>🔹 <a href="part-f-media-queries/exercise-14-mobile-first.html">Mobile First</a></li>
+                    <li>🔹 <a href="part-f-media-queries/exercise-15-responsive-images.html">Responsive Images</a></li>
+                </ul>
+            </div>
+                </div>
+
+        <h2>🎯 Part G: Layout Combinations & Best Practices</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Exercise 16: Combining Techniques</h3>
+                <ul>
+                    <li>🔹 <a href="part-g-combinations/exercise-16-combining-techniques.html">Mixed Layouts</a></li>
+                </ul>
+            </div>
+                 </div>
+        </div>
+        <h2>🚀 Advanced Challenges</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Tasks 11-15</h3>
+                <ul>
+                    <li>🔹 <a href="advanced-challenges/task-11-magazine-layout.html">Magazine Layout</a></li>
+                    <li>🔹 <a href="advanced-challenges/task-12-form-builder.html">Form Builder</a></li>
+                    <li>🔹 <a href="advanced-challenges/task-13-portfolio.html">Portfolio Layout</a></li>
+                    <li>🔹 <a href="advanced-challenges/task-14-responsive-table.html">Responsive Table</a></li>
+                    <li>🔹 <a href="advanced-challenges/task-15-landing-page.html">Landing Page</a></li>
+                </ul>
+                <span class="badge">Optional</span>
+            </div>
+        </div>
+                </div>
+
+        <h2>🛠️ Media Query Breakpoints Practice</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Tasks 16-18</h3>
+                <ul>
+                    <li>🔹 <a href="media-query-practice/task-16-breakpoint-implementation.html">Breakpoint Implementation</a></li>
+                    <li>🔹 <a href="media-query-practice/task-17-responsive-utilities.html">Responsive Utilities</a></li>
+                    <li>🔹 <a href="media-query-practice/task-18-dark-mode.html">Dark Mode & Preferences</a></li>
+                </ul>
+                <span class="badge">Optional</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>CS 224L Web Technologies | Mr. Mohammad | University of Engineering & Technology, Peshawar</p>
+            <p>Complete all tasks marked with <span class="badge">Required</span></p>
+        </div>
+    </div>
+</body>
+</html>

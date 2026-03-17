@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #7cc4be 0%, #5fa7ae 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .card {
+            flex: 1 1 250px;
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .card h3 {
+            color: #4a385c;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .card button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 100%;
+        }
+
+        .card button:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card-container">
+    <div class="card">
+        <h3>Card 1</h3>
+        <p>Example content for first card. Simple and clean design.</p>
+        <button>Read More</button>
+    </div>
+
+    <div class="card">
+        <h3>Card 2</h3>
+        <p>Example content for second card. Simple and clean design.</p>
+        <button>Read More</button>
+    </div>
+
+    <div class="card">
+        <h3>Card 3</h3>
+        <p>Example content for third card. Simple and clean design.</p>
+        <button>Read More</button>
+    </div>
+</div>
+
+</body>
+</html>
